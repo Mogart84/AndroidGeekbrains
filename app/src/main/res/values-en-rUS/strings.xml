@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather Application</string>
+    <string name="heading" translatable="true">All about weather!</string>
+    <string name="city_chosen" translatable="true">City</string>
+    <string name="please_choose_city" translatable="true">Choose your city:</string>
+    <string name="city_hint" translatable="true">Your city</string>
+    <string name="weather_data_view">Weather data view</string>
+    <string name="update_weather_button" translatable="true">Update weather</string>
+</resources>
