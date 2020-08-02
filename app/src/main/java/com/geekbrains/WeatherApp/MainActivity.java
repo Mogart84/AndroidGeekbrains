@@ -1,4 +1,4 @@
-package com.geekbrains.lesson1;
+package com.geekbrains.WeatherApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">lesson1</string>
+    <string name="app_name">Погодное приложение</string>
+    <string name="heading" translatable="true">Всё о погоде!</string>
+    <string name="city_chosen" translatable="true">Город</string>
+    <string name="please_choose_city" translatable="true">Выберите ваш город:</string>
+    <string name="city_hint" translatable="true">Ваш город</string>
+    <string name="weather_data_view">Weather data view</string>
+    <string name="update_weather_button" translatable="true">Обновить погоду</string>
 </resources>
