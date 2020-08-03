@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textViewAllAboutWeather2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/heading"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/textViewChooseCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/textViewChooseCity"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/please_choose_city"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/textViewAdditionalParams"
+        app:layout_constraintEnd_toStartOf="@id/plainTextChosenCity"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewAllAboutWeather2" />
+
+    <EditText
+        android:id="@+id/plainTextChosenCity"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:ems="6"
+        android:hint="@string/city_hint"
+        android:inputType="textNoSuggestions"
+        android:text="@string/city_chosen"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/buttonUpdateWeather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@id/textViewChooseCity"
+        app:layout_constraintTop_toBottomOf="@id/textViewAllAboutWeather2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonUpdateWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/update_weather_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxHumidity" />
+
+    <TextView
+        android:id="@+id/textViewAdditionalParams"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:foregroundGravity="left"
+        android:gravity="center_vertical"
+        android:text="@string/additional_params_textview"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxWindSpeed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewChooseCity" />
+
+    <CheckBox
+        android:id="@+id/checkBoxWindSpeed"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center_vertical"
+        android:foregroundGravity="center_horizontal"
+        android:text="@string/wind_speed_checkbox"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxAirPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewAdditionalParams" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHumidity"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center_vertical"
+        android:foregroundGravity="center_horizontal"
+        android:text="@string/humidity_checkbox"
+        app:layout_constraintBottom_toTopOf="@id/buttonUpdateWeather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxAirPressure" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAirPressure"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:text="@string/air_pressure_checkbox"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxHumidity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxWindSpeed" />
+
+    <TextView
+        android:id="@+id/textViewPopularCities"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:foregroundGravity="left"
+        android:gravity="center_vertical"
+        android:text="@string/popular_cities_textview"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@id/spinnerPopularCities"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonUpdateWeather" />
+
+    <Spinner
+        android:id="@+id/spinnerPopularCities"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:entries="@array/cityNames"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPopularCities" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
