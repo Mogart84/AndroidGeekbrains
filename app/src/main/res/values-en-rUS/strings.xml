@@ -7,4 +7,10 @@
     <string name="city_hint" translatable="true">Your city</string>
     <string name="weather_data_view">Weather data view</string>
     <string name="update_weather_button" translatable="true">Update weather</string>
+    <string name="wind_speed_checkbox" translatable="true">Wind speed</string>
+    <string name="air_pressure_checkbox" translatable="true">Air pressure</string>
+    <string name="humidity_checkbox" translatable="true">Air humidity</string>
+    <string name="additional_params_textview" translatable="true">Show additional params:</string>
+    <string name="popular_cities_textview" translatable="true">Popular cities:</string>
+    <string name="choose_city_button" translatable="true">Choose city</string>
 </resources>
